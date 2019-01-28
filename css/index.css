@@ -1,3 +1,6 @@
+*{
+  box-sizing:content-box;
+}
 #work_sec {
   background-color: #ffffdf;
   color: #3d2900;
