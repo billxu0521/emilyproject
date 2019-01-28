@@ -11,9 +11,44 @@
 
 #intro_sec{
 
+}
+
+#skill_fes{
+  font-size: 48px;
+  margin: auto;
+}
+
+#skill_fes_eng{
+  font-size: 16px;
+  padding-top: 30px
+}
+
+.masthead-content{
+  height: 100vh; 
+
+}
+.section{
+  background-image: url('../img/cream color.jpg');
+  height: 100vh; 
+  padding-top: 10%;
+}
+
+#skill_title{
+  text-align:center;
+  margin: 0px auto;/*div對齊效果*/
+  max-width: 100% !important;
+  flex: 0 0 100%;
 
 }
 
-.section{
-  background-image: url('../img/cream color.jpg');
+.container{
+  max-width: 100% !important;
+}
+
+#skill_dres{
+  display: inline-block;/*讓div並排*/ 
+  vertical-align: top;/*就算個個div行數不同，也一律向上對齊*/ 
+  width: 18%;
+  padding: 10px;
+  border-radius:3px;margin: 2px;
 }
