@@ -20,7 +20,11 @@
     <!-- Custom styles for this template -->
     <link href="css/one-page-wonder.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <script src="https://squaresend.com/squaresend.js"></script>
 
+    <!-- Custom animate -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    
   </head>
 
   <body>
@@ -28,7 +32,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Emily Studio</a>
+        <a class="navbar-brand" href="#"><img id="title_img" src="img/02.jpg" alt=""><<這是圖</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -119,29 +123,29 @@
     <section class="section" id="servive_sec">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6" id="skill_title" >
+          <div class="col-lg-6" id="service_title" >
             <div class="p-5">
               <h2 class="display-4">Services</h2>
               <p>服務介紹</p>
-              <div id="skill_dres">
+              <div id="service_dres">
                 <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
-                <div id="skill_fes">高效</div>
-                <div id="skill_fes_eng">BBBB</div>
+                <div id="service_fes">高效</div>
+                <div data-animation="fadeIn" data-timeout="0"  class="revealOnScroll" id="service_pop_text">測試測試測試</div>
               </div>
-              <div id="skill_dres">
+              <div id="service_dres">
                 <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
-                <div id="skill_fes">準確</div>
-                <div id="skill_fes_eng">BBBB</div>
+                <div id="service_fes">準確</div>
+                <div data-animation="fadeIn" data-timeout="0"  class="revealOnScroll" id="service_pop_text">測試測試測試</div>
               </div>
-              <div id="skill_dres">
+              <div id="service_dres">
                 <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
-                <div id="skill_fes">文筆流暢</div>
-                <div id="skill_fes_eng">BBBB</div>
+                <div id="service_fes">文筆流暢</div>
+                <div data-animation="fadeIn" data-timeout="0"  class="revealOnScroll" id="service_pop_text">測試測試測試</div>
               </div>
-              <div id="skill_dres">
+              <div id="service_dres">
                 <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
-                <div id="skill_fes">交付準時</div>
-                <div id="skill_fes_eng">BBBB</div>
+                <div id="service_fes">交付準時</div>
+                <div data-animation="fadeIn" data-timeout="0"  class="revealOnScroll" id="service_pop_text">測試測試測試</div>
               </div>
             </div>
           </div>
@@ -152,12 +156,24 @@
     <section class="section" id="client_sec">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6">
-          </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" id="client_title" >
             <div class="p-5">
               <h2 class="display-4">Client</h2>
               <p>作品清單</p>
+              <table class="client_table">
+                <tr>
+                  <td><img style="width: 50%" src="img/Free_logo.svg" alt=""></td>
+                  <td><img style="width: 50%" src="img/Free_logo.svg" alt=""></td>
+                  <td><img style="width: 50%" src="img/Free_logo.svg" alt=""></td>
+                  <td><img style="width: 50%" src="img/Free_logo.svg" alt=""></td>
+                </tr>
+                <tr>
+                  <td><img style="width: 50%" src="img/Free_logo.svg" alt=""></td>
+                  <td><img style="width: 50%" src="img/Free_logo.svg" alt=""></td>
+                  <td><img style="width: 50%" src="img/Free_logo.svg" alt=""></td>
+                  <td><img style="width: 50%" src="img/Free_logo.svg" alt=""></td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
@@ -174,6 +190,16 @@
             <div class="p-5">
               <h2 class="display-4">CONACT ME</h2>
               <p>聯絡我</p>
+              <a href="mailto:billxu0521@gmail.com">Contact</a>
+              <form action="https://formspree.io/billxu0521@gmail.com" method="POST">
+                <input type="text" name="name">
+                <input type="email" name="_replyto">
+                <input type="submit" value="Send">
+              </form>
+
+
+
+
               <form>
                 <div class="form-group">
                   <label for="customer_subject">Subject</label>
@@ -216,7 +242,29 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/modernizr-custom.js"></script>
+    <script>
+      var $window = $(window), win_height_padded = $window.height() * 1.1, isTouch = Modernizr.touch;
+      
+      $window.on('scroll', revealOnScroll);
 
+      function revealOnScroll() { 
+        var scrolled = $window.scrollTop(); 
+        $(".revealOnScroll:not(.animated)").each(function () { 
+          var $this = $(this), offsetTop = $this.offset().top; 
+
+          if (scrolled + win_height_padded > offsetTop) { 
+            if ($this.data('timeout')) { 
+              window.setTimeout(function(){ 
+                $this.addClass('animated ' + $this.data('animation')); 
+              }, parseInt($this.data('timeout'),3)); 
+            } else { 
+              $this.addClass('animated ' + $this.data('animation')); 
+            } 
+          } 
+        });
+      }
+    </script>
   </body>
 
 </html>

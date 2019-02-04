@@ -1,15 +1,22 @@
 *{
   box-sizing:content-box;
 }
+
 #work_sec {
   background-color: #ffffdf;
   color: #3d2900;
 }
 
+.p-5{
+  padding: 0 0 0 0  !important; 
+}
+
 #conect_sec{
 
+}
 
-
+#title_img{
+  height: 5vh; 
 }
 
 #intro_sec{
@@ -17,6 +24,11 @@
 }
 
 #skill_fes{
+  font-size: 48px;
+  margin: auto;
+}
+
+#service_fes{
   font-size: 48px;
   margin: auto;
 }
@@ -41,7 +53,18 @@
   margin: 0px auto;/*div對齊效果*/
   max-width: 100% !important;
   flex: 0 0 100%;
+}
 
+#service_title{
+  text-align:center;
+  margin: 0px auto;/*div對齊效果*/
+  max-width: 100% !important;
+  flex: 0 0 100%;
+}
+
+#client_title{
+  text-align:center;
+  margin: 0px auto;/*div對齊效果*/
 }
 
 .container{
@@ -51,7 +74,31 @@
 #skill_dres{
   display: inline-block;/*讓div並排*/ 
   vertical-align: top;/*就算個個div行數不同，也一律向上對齊*/ 
-  width: 18%;
-  padding: 10px;
+  width: 14%;
+  padding: 4%;
   border-radius:3px;margin: 2px;
+}
+
+#service_dres{
+  display: inline-block;/*讓div並排*/ 
+  vertical-align: top;/*就算個個div行數不同，也一律向上對齊*/ 
+  width: 14%;
+  padding: 4%;
+  border-radius:3px;margin: 2px;
+}
+
+#service_pop_text{
+  width: 100%;
+  height: 20vh;
+  background-color: #FFFFFF;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+table.client_table{
+  width: 100%;
+  border: 2px solid black;
+}
+table.client_table td{
+  border: 2px dashed black;
 }
