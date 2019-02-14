@@ -7,8 +7,17 @@
   color: #3d2900;
 }
 
+header{
+  background-image: url('../img/apple-coffee-coffee-shop-7101.jpg')  !important; 
+}
+
 .p-5{
   padding: 0 0 0 0  !important; 
+}
+
+#imtro_img{
+  max-width: 100%;
+  height: auto;
 }
 
 #conect_sec{
@@ -79,6 +88,10 @@
   border-radius:3px;margin: 2px;
 }
 
+.rounded-circle{
+  box-shadow: 0px 5px 2px #888888;
+}
+
 #service_dres{
   display: inline-block;/*讓div並排*/ 
   vertical-align: top;/*就算個個div行數不同，也一律向上對齊*/ 
@@ -94,11 +107,14 @@
   animation-duration: 3s;
   animation-delay: 0s;
 }
+#client_img{
+  mix-blend-mode: multiply;
+}
 
 table.client_table{
   width: 100%;
-  border: 2px solid black;
+  border: 0px solid black;
 }
 table.client_table td{
-  border: 2px dashed black;
+  border: 0px dashed black;
 }
