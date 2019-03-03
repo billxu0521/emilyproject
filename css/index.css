@@ -133,8 +133,13 @@ header{
   mix-blend-mode: multiply;
 }
 
+#conact_text{
+  color: #444444 ;
+  font-size: 18px;
+}
+
 table.client_table{
-  margin-top: 50px;
+  margin-top: 15%;
   width: 100%;
   border: 0px solid black;
 }
