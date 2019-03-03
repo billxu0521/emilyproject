@@ -2,6 +2,11 @@
   box-sizing:content-box;
 }
 
+header.masthead{
+  
+  padding-bottom: 0px !important; 
+}
+
 #work_sec {
   background-color: #ffffdf;
   color: #3d2900;
@@ -9,6 +14,9 @@
 
 header{
   background-image: url('../img/apple-coffee-coffee-shop-7101.jpg')  !important; 
+  background-size:auto;  
+  -webkit-background-size:auto;
+  -moz-background-size:auto;
 }
 
 .p-5{
@@ -24,16 +32,27 @@ header{
 
 }
 
+.navbar-custom {
+  padding-top: 0rem; 
+  padding-bottom: 0rem;
+}
+
 #title_img{
-  height: 5vh; 
+
+  height: 10vh; 
 }
 
 #intro_sec{
 
 }
 
+#intro_sec{
+  font-size: 20px;
+
+}
+
 #skill_fes{
-  font-size: 48px;
+  font-size: 36px;
   margin: auto;
 }
 
@@ -42,13 +61,8 @@ header{
   margin: auto;
 }
 
-#skill_fes_eng{
-  font-size: 16px;
-  padding-top: 30px
-}
-
 .masthead-content{
-  height: 100vh; 
+  height: 90vh; 
 
 }
 .section{
@@ -77,7 +91,7 @@ header{
 }
 
 .container{
-  max-width: 100% !important;
+  
 }
 
 #skill_dres{
@@ -97,13 +111,21 @@ header{
   vertical-align: top;/*就算個個div行數不同，也一律向上對齊*/ 
   width: 14%;
   padding: 4%;
+  color: #444444 ;
   border-radius:3px;margin: 2px;
+}
+
+.display-4{
+  color: #444444 ;
 }
 
 #service_pop_text{
   width: 100%;
+  margin: auto;
+  text-align: left;
   height: 20vh;
-  background-color: #FFFFFF;
+  font-size: 18px;
+  color: #444444 ;
   animation-duration: 3s;
   animation-delay: 0s;
 }
@@ -112,9 +134,13 @@ header{
 }
 
 table.client_table{
+  margin-top: 50px;
   width: 100%;
   border: 0px solid black;
 }
 table.client_table td{
   border: 0px dashed black;
+}
+table.client_table tr{
+  width: 70%;
 }
