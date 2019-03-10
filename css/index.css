@@ -2,6 +2,33 @@
   box-sizing:content-box;
 }
 
+@media (min-width:992px){
+  header.masthead .masthead-content .masthead-heading{
+    font-size: 3rem !important; 
+    color: #8e8e8e ;
+    font-weight:300 !important; 
+    padding-bottom: 5%;
+  }
+}
+
+@media (min-width: 992px){
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 2rem !important; 
+    color: #8e8e8e ;
+    font-weight:300 !important; 
+  }
+}
+
+.btn-primary {
+    background-color: #8e8e8e !important; 
+    border-color: #8e8e8e !important; 
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+    font-size: .9rem;
+    font-weight: 800;
+}
+
 header.masthead{
   
   padding-bottom: 0px !important; 
@@ -12,11 +39,24 @@ header.masthead{
   color: #3d2900;
 }
 
+#intro_dres{
+  color: #8e8e8e ;
+  margin-top:10%;
+  letter-spacing: 7px;
+  font-weight:300;
+}
+
 header{
-  background-image: url('../img/apple-coffee-coffee-shop-7101.jpg')  !important; 
+  background-image: url('../img/p1b.jpg')  !important; 
   background-size:auto;  
   -webkit-background-size:auto;
   -moz-background-size:auto;
+}
+
+#p1-title{
+  left: -15%;
+  bottom: 20%;
+  position: absolute;
 }
 
 .p-5{
@@ -38,12 +78,11 @@ header{
 }
 
 #title_img{
-
   height: 10vh; 
 }
 
 #intro_sec{
-
+  height: 40vh; 
 }
 
 #intro_sec{
@@ -52,26 +91,35 @@ header{
 }
 
 #skill_fes{
-  font-size: 36px;
+  font-size: 24px;
+  color: #8e8e8e ;
+  letter-spacing: 7px;
+  font-weight:300;
   margin: auto;
+  padding-top: 20%;
 }
 
 #service_fes{
-  font-size: 48px;
+  font-size: 24px;
+  color: #8e8e8e ;
+  letter-spacing: 7px;
+  font-weight:300;
   margin: auto;
+  padding-top: 20%;
 }
 
 .masthead-content{
-  height: 90vh; 
+  height: 80vh; 
 
 }
 .section{
   background-image: url('../img/cream color.jpg');
-  height: 100vh; 
-  padding-top: 10%;
+  height: 60vh; 
+  padding-top: 5%;
 }
 
 #skill_title{
+  padding-top: 5%;
   text-align:center;
   margin: 0px auto;/*div對齊效果*/
   max-width: 100% !important;
@@ -79,6 +127,7 @@ header{
 }
 
 #service_title{
+  padding-top: 5%;
   text-align:center;
   margin: 0px auto;/*div對齊效果*/
   max-width: 100% !important;
@@ -86,6 +135,7 @@ header{
 }
 
 #client_title{
+  padding-top: 5%;
   text-align:center;
   margin: 0px auto;/*div對齊效果*/
 }
@@ -103,7 +153,7 @@ header{
 }
 
 .rounded-circle{
-  box-shadow: 0px 5px 2px #888888;
+  
 }
 
 #service_dres{
@@ -116,36 +166,55 @@ header{
 }
 
 .display-4{
-  color: #444444 ;
+  color: #8e8e8e ;
+  font-weight:300 !important;
+  font-size: 36px;
+  letter-spacing: 7px;
+}
+
+#servive_subtitle{
+  color: #8e8e8e ;
+  font-size: 20px;
+  font-weight:300 !important;
+  letter-spacing: 7px;
 }
 
 #service_pop_text{
-  width: 100%;
+  width: 120%;
   margin: auto;
   text-align: left;
   height: 20vh;
   font-size: 18px;
-  color: #444444 ;
+  color: #8e8e8e ;
   animation-duration: 3s;
   animation-delay: 0s;
+  letter-spacing: 1px;
+  font-weight:300;
+  
+}
+
+#conact_title{
+  padding-top: 5%;
 }
 #client_img{
   mix-blend-mode: multiply;
+  width: 50%;
+  padding-left:15%;
+  padding-right:15%;
 }
 
 #conact_text{
   color: #444444 ;
   font-size: 18px;
+  padding-top: 5%;
 }
 
-table.client_table{
-  margin-top: 15%;
-  width: 100%;
-  border: 0px solid black;
+#conact_sec{
+  height: 90vh;
 }
-table.client_table td{
-  border: 0px dashed black;
-}
-table.client_table tr{
-  width: 70%;
+
+#client_row{
+  max-width: 80%;
+  margin: auto;
+  padding-top: 5%;
 }
