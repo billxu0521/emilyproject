@@ -2,6 +2,11 @@
   box-sizing:content-box;
 }
 
+.btn-primary{
+  padding: 1rem 1.2rem;
+  letter-spacing:0.2rem;
+}
+
 @media (min-width:992px){
   header.masthead .masthead-content .masthead-heading{
     font-size: 3rem !important; 
@@ -114,12 +119,11 @@ header{
 }
 .section{
   background-image: url('../img/cream color.jpg');
-  height: 60vh; 
-  padding-top: 5%;
+  
 }
 
 #skill_title{
-  padding-top: 5%;
+  padding-top: 120px;
   text-align:center;
   margin: 0px auto;/*div對齊效果*/
   max-width: 100% !important;
@@ -127,7 +131,7 @@ header{
 }
 
 #service_title{
-  padding-top: 5%;
+  padding-top: 160px;
   text-align:center;
   margin: 0px auto;/*div對齊效果*/
   max-width: 100% !important;
@@ -135,7 +139,7 @@ header{
 }
 
 #client_title{
-  padding-top: 5%;
+  padding-top: 160px;
   text-align:center;
   margin: 0px auto;/*div對齊效果*/
 }
@@ -178,16 +182,22 @@ header{
   font-weight:300 !important;
   letter-spacing: 7px;
 }
+#service_img {
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+}
+
+#skill_img{
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+}
 
 #service_pop_text{
-  width: 120%;
+  width: 100%;
   margin: auto;
   text-align: left;
-  height: 20vh;
   font-size: 18px;
   color: #8e8e8e ;
-  animation-duration: 3s;
-  animation-delay: 0s;
   letter-spacing: 1px;
   font-weight:300;
   
@@ -198,9 +208,13 @@ header{
 }
 #client_img{
   mix-blend-mode: multiply;
-  width: 50%;
-  padding-left:15%;
-  padding-right:15%;
+  width: 70%;
+  padding-left:8%;
+  padding-right:8%;
+}
+
+.col-sm{
+  margin: auto;
 }
 
 #conact_text{
