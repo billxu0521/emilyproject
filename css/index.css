@@ -151,20 +151,20 @@ header{
 #skill_dres{
   display: inline-block;/*讓div並排*/ 
   vertical-align: top;/*就算個個div行數不同，也一律向上對齊*/ 
-  width: 14%;
-  padding: 4%;
+  width: 18%;
+  padding: 2%;
   border-radius:3px;margin: 2px;
 }
 
 .rounded-circle{
-  
+  max-width: 60% !important;
 }
 
 #service_dres{
   display: inline-block;/*讓div並排*/ 
   vertical-align: top;/*就算個個div行數不同，也一律向上對齊*/ 
-  width: 14%;
-  padding: 4%;
+  width: 18%;
+  padding: 2%;
   color: #444444 ;
   border-radius:3px;margin: 2px;
 }
@@ -194,8 +194,8 @@ header{
 
 #service_pop_text{
   width: 100%;
-  margin: auto;
-  text-align: left;
+  margin: 0px auto;
+  text-align: center;
   font-size: 18px;
   color: #8e8e8e ;
   letter-spacing: 1px;
@@ -224,7 +224,7 @@ header{
 }
 
 #conact_sec{
-  height: 90vh;
+  height: 100vh;
 }
 
 #client_row{
