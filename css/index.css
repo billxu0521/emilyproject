@@ -113,6 +113,12 @@ header{
   padding-top: 20%;
 }
 
+#conect_img{
+  max-width: 25%;
+  padding-right: 10%;
+  padding-top: 8%;
+}
+
 .masthead-content{
   height: 80vh; 
 
@@ -205,10 +211,12 @@ header{
 
 #conact_title{
   padding-top: 5%;
+  text-align:center;
+  margin: 0px auto;/*div對齊效果*/
 }
 #client_img{
   mix-blend-mode: multiply;
-  width: 70%;
+  max-width: 60%;
   padding-left:8%;
   padding-right:8%;
 }
@@ -225,6 +233,7 @@ header{
 
 #conect_sec{
   height: 50vh;
+  padding-bottom: 10%;
 }
 
 #client_row{
