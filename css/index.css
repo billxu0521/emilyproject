@@ -210,7 +210,7 @@ header{
 }
 
 #conact_title{
-  padding-top: 5%;
+  padding-top: 160px;
   text-align:center;
   margin: 0px auto;/*div對齊效果*/
 }
@@ -232,7 +232,7 @@ header{
 }
 
 #conect_sec{
-  height: 50vh;
+  height: 60vh;
   padding-bottom: 10%;
 }
 
